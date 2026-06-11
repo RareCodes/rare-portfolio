@@ -10,8 +10,8 @@ export default function About() {
       {/* STATS */}
       <div style={{ display: "flex", flexDirection: "column", gap: "36px" }}>
         {[
-          { num: "6", label: "Design Projects" },
-          { num: "4", label: "Industries" },
+          { num: "4", label: "Design Projects" },
+          { num: "2", label: "Industries" },
         ].map((s) => (
           <div key={s.label}>
             <div style={{ fontFamily: "var(--display)", fontSize: "68px", lineHeight: "1", color: "var(--accent)" }}>{s.num}</div>
@@ -21,7 +21,7 @@ export default function About() {
       </div>
 
       {/* PHOTO */}
-      <div style={{ position: "relative" }}>
+      {/* <div style={{ position: "relative" }}>
         <div style={{
           width: "100%",
           aspectRatio: "3/4",
@@ -46,7 +46,7 @@ export default function About() {
         }}>
           Rare ✦ Product Designer
         </div>
-      </div>
+      </div> */}
 
       {/* COPY */}
       <div style={{ paddingTop: "8px" }}>
