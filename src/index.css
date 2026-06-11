@@ -75,3 +75,21 @@ html {
 }
 .proj-row:hover::before { width: 100%; }
 .proj-row > * { position: relative; z-index: 1; }
+
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+* { -webkit-tap-highlight-color: transparent; }
+
+body { cursor: auto; }
+
+@media (min-width: 768px) {
+  body { cursor: none; }
+}
+
+@media (max-width: 767px) {
+  .custom-cursor,
+  .cursor-trail { display: none; }
+}
