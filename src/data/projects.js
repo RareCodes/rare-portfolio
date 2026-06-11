@@ -13,10 +13,10 @@ export const projects = [
   },
   {
     id: 'skillswap',
-    name: 'SkillSwap',
+    name: 'Swaply',
     label: 'E-Commerce · 2026',
     industry: 'Marketplace',
-    tagline: 'A peer-to-peer skill-exchange platform built for users, where trust is infrastructure, not a feature.',
+    tagline: 'A peer-to-peer skill-exchange platform built for creatives who are willing to trade skills.',
     desc: 'Peer-to-peer skill-exchange marketplace.',
     chips: ['Mobile', 'UX/UI'],
     featured: false,

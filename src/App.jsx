@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Cursor from "./components/Cursor";
 import Nav from "./components/Nav";
 import Hero from "./components/Hero";
@@ -9,10 +9,13 @@ import Footer from "./components/Footer";
 import CaseStudy from "./pages/CaseStudy";
 
 export default function App() {
-  const [currentPage, setCurrentPage] = useState("home");
+  const [currentPage, setCurrentPage] = useState(() => {
+    return localStorage.getItem("currentPage") || "home";
+  });
 
   const navigate = (page) => {
     setCurrentPage(page);
+    localStorage.setItem("currentPage", page);
     window.scrollTo(0, 0);
   };
 

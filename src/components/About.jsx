@@ -79,7 +79,7 @@ export default function About() {
         }}>
           Rare ✦ Product Designer
         </div>
-      </div> */}
+      </div> 
 
       {/* COPY */}
       <div style={{ paddingTop: isMobile ? "0" : "8px", gridColumn: isMobile ? "1" : isTablet ? "2" : "3" }}>
